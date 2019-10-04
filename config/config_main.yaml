@@ -1,0 +1,6 @@
+# config file for the sentiment analysis for Amazon
+
+input:
+  folder: "/Users/debenetti nicolo/Desktop/machine learning material/database/Amazon_sentiment/amazonreviews/"
+  train: "train.ft.txt"
+  test: "test.ft.txt"
