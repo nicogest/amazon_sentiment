@@ -4,3 +4,19 @@ input:
   folder: "/Users/debenetti nicolo/Desktop/machine learning material/database/Amazon_sentiment/amazonreviews/"
   train: "train.ft.txt"
   test: "test.ft.txt"
+
+preprocessing:
+  vocab_size: &vocab_size 100000
+  embedding_dim: &embedding_dim 16
+  max_length: &max_length 120
+  trunc_type: "post"
+  oov_tokQ: "<OOV>"
+
+model_lstm:
+  vocab_size: *vocab_size
+  embedding_dim: *embedding_dim
+  max_length: *max_length
+  loss: "binary_crossentropy"
+  optimizer: "adam"
+  metrics: ["accuracy"]
+  num_epochs: 10

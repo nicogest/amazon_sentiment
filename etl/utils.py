@@ -5,7 +5,7 @@ import pandas as pd
 
 def load(file_dir):
 
-    file = pd.read_csv(file_dir, nrows=1000, error_bad_lines=False, header=None, names=['text'], sep='/n')
+    file = pd.read_csv(file_dir, error_bad_lines=False, header=None, names=['text'], sep='/n', verbose=False)
 
     return file
 
